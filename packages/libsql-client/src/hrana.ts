@@ -1,8 +1,8 @@
 import * as hrana from "@libsql/hrana-client";
-import type { InStatement, ResultSet, Transaction, TransactionMode } from "./api.js";
-import { LibsqlError } from "./api.js";
-import type { SqlCache } from "./sql_cache.js";
-import { transactionModeToBegin, ResultSetImpl } from "./util.js";
+import type { InStatement, ResultSet, Transaction, TransactionMode } from "@libsql/client-core/api";
+import { LibsqlError } from "@libsql/client-core/api";
+import type { SqlCache } from "@libsql/client-core/sql_cache";
+import { transactionModeToBegin, ResultSetImpl } from "@libsql/client-core/util";
 
 export abstract class HranaTransaction implements Transaction {
     #mode: TransactionMode;

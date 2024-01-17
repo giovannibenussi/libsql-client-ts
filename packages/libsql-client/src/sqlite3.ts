@@ -4,13 +4,13 @@ import { Buffer } from "node:buffer";
 import type {
     Config, IntMode, Client, Transaction, TransactionMode,
     ResultSet, Row, Value, InValue, InStatement,
-} from "./api.js";
-import { LibsqlError } from "./api.js";
-import type { ExpandedConfig } from "./config.js";
-import { expandConfig } from "./config.js";
-import { supportedUrlLink, transactionModeToBegin, ResultSetImpl } from "./util.js";
+} from "@libsql/client-core/api";
+import { LibsqlError } from "@libsql/client-core/api";
+import type { ExpandedConfig } from "@libsql/client-core/config";
+import { expandConfig } from "@libsql/client-core/config";
+import { supportedUrlLink, transactionModeToBegin, ResultSetImpl } from "@libsql/client-core/util";
 
-export * from "./api.js";
+export * from "@libsql/client-core/api";
 
 export function createClient(config: Config): Client {
     return _createClient(expandConfig(config, true));

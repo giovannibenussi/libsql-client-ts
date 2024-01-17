@@ -1,5 +1,5 @@
-import type { Config, IntMode } from "./api.js";
-import { LibsqlError } from "./api.js";
+import type { Config, IntMode } from "./api";
+import { LibsqlError } from "./api";
 import type { Authority } from "./uri.js";
 import { parseUri } from "./uri.js";
 import { supportedUrlLink } from "./util.js";

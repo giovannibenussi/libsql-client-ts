@@ -3,7 +3,7 @@
 // `file:relative/path/database.db`, which are not correct according to RFC 8089, which standardizes the
 // `file` scheme.
 
-import { LibsqlError } from "./api.js";
+import { LibsqlError } from "./api";
 
 export interface Uri {
     scheme: string;
